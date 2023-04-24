@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<title>Feedback</title>
+		
+	<style type="text/css">
+			*
+			{
+			
+				padding:0;
+				margin:0;
+				font-family:verdana;
+			}
+		#wrap
+		{
+			height:auto;
+			width:100%;
+			display:block;
+		}
+		#foot
+		{
+			background-color:#4c230cfa;
+			padding:5px;
+			width:100%;
+			height:auto;
+			font-size:18px;
+			text-align:center;
+			color:#f4511e;
+		}
+		#menu
+		{	
+			
+			display:block;
+			width:100%;
+			height:auto;
+			background-color:#4c230cfa;
+			padding:10px;
+		}
+		#nav
+		{
+		
+		}
+		#menu img
+		{
+			margin:0px 0px 0px 40px;
+			border-radius:25px;
+			float:left;
+			border:1px solid #f4511e;
+		}
+		#nav li
+		{
+			padding:10px;
+			display:inline-block;
+		}
+		#nav li a
+		{
+			font-size:19px;
+			padding:10px;	
+			color:#f4511e;
+			text-decoration:none;
+			border-bottom:1px solid #4c230cfa;
+			transition:border-bottom 0.3s;
+		}
+		#nav li a:hover	
+		{
+			border-bottom:1px solid #f4511e;
+		}
+		
+		#back1
+		{
+			height:500px;
+			width:100%;
+			background-image:url("back2.jpg");
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-position:center;
+			background-attachment:fixed;
+		}
+		#back2
+		{
+			height:500px;
+			width:100%;
+			background-image:url("back3.jpg");
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-position:center;
+			background-attachment:fixed;
+		}
+		form
+		{
+			width:30%;
+			height:auto;
+			border:2px solid #f4511e;
+			border-radius:15px;
+			
+		}
+	</style>
+	</head>
+		
+<body>
+	<div id="wrap">
+		<div id="menu">
+			<img src="logo.jpg" height="100" width="100">
+			<ul id="nav">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="menu.html">MENU</a></li>
+				<li><a href="feedback.html">FEEDBACK</a></li>
+			</ul>
+		</div>
+		<div id="back1"></div>
+		<center><br><h2>Feedback Form</h2><br><br>
+		<form method="POST" action="form.php">
+			<br>Name: <br><input type="text" name="name" pattern="[a-zA-Z]+"required placeholder="Your Name..."><br>
+			
+			<br>Email: <br><input type="email" name="email" placeholder="Email Id..."><br>
+			
+			<br>Mobile: <br><input type="text" name="mobile" pattern="[789][0-9]+"required placeholder="Your Mobile No..."><br>
+			
+			<br>Feedback: <br><textarea type="text" name="message" rows="5" cols="21" placeholder="Your Feedback Please...."></textarea><br><br>
+			
+			<input type="submit" name="SUBMIT" ><br>
+		</form></center><br><br>
+		<div id="back2"></div>
+		<div id="foot">&copy All Rights Reserved www.coffeelaugh.com</div>
+	</div>
+</body>
+</html>

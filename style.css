@@ -1,0 +1,17 @@
+
+		
+		#wrap
+		{
+			height:auto;
+			width:100%;
+			display:block;
+		}
+		#foot
+		{
+			padding:5px;
+			width:100%;
+			height:auto;
+			font-size:18px;
+			text-align:center;
+		}
+	
